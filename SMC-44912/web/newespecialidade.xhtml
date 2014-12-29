@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+    |<ui:composition template="template.xhtml">
+        <ui:define name="title">
+            Cadastro de Especialidade
+        </ui:define>
+
+        <ui:define name="titulo_tela">
+            Cadastro de Especialidade
+        </ui:define>
+        <ui:define name="content">
+            <h:form>
+                <div class="row">
+                    <h:outputLabel value="Especialidade:"/>
+                    <h:inputText styleClass="form-control"
+                        value="#{beanEspecialidade.especialidade.nomeEspecialidade}"
+                        required="true" requiredMessage="Informe o nome da especialidade"/>
+                </div>
+                <h:commandButton styleClass="btn btn-info btn-lg" value="Salvar"
+                                 action="#{beanEspecialidade.add()}"/>
+            </h:form>
+        </ui:define>
+    </ui:composition>
+</html>
+

@@ -1,4 +1,4 @@
-package br.org.fieb.senai;
+package br.org.fieb.senai.model;
 
 public class PlanoSaude {
 private int id;
